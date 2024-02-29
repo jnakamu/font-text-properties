@@ -1,7 +1,7 @@
 /* 
     ---------------------------------------------------------------
     Add your name to this file below:
-    NAME: 
+    NAME: Jake Nakamura
     ---------------------------------------------------------------
 */
 
@@ -24,6 +24,8 @@
 
     /* Font Stacks */
     /* add the two font stacks here */
+	--heading-fonts: "Seymour One", Impact, sans-serif;
+	--body-fonts: Lato, Arial, sans-serif;
 }
 
 body{
@@ -31,6 +33,10 @@ body{
 	/* Set the line height to 1.5 */
 	/* set the font size to 1.1rem	*/
 	/* set the font color to #222 (--dk-gray) */
+	font-family: var(--body-fonts);
+	line-height: 1.5;
+	font-size: 1.1rem;
+	color: #222;
 	margin: 0;
 	padding: 0;
 }
@@ -46,6 +52,10 @@ h1, h2, h3{
 	/* center align the text */
 	/* use a web font here (instructions on page) */
 	/* make the heading text all small caps style */
+	text-align: center;
+	font-family: var(--heading-fonts);
+	
+	
 }
 
 h2{
@@ -57,6 +67,7 @@ h2{
 h3{
 	margin: 0;
 	padding: 4px;
+	text-decoration: underline var(--mint);
 	/* add an underline like the one on the h2s to the h3s, but make it solid and mint color */
 }
 
@@ -72,14 +83,21 @@ nav ul{
 
 nav a{
 	/* make these display as block level elements */
+	display: block;
 	margin: 1rem auto;
 	padding: 1rem;
 	background-color: var(--tiffany);
+	color: var(--dk-gray);
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 600;
 	/* set the font color to #222 (--dk-gray) */
 	/* center align the text */
 	/* remove the underline */
 	/* make the font's size 1.2rem */
 	/* make the font bolder (600) */
+
 }
 
 nav a:hover{
@@ -104,6 +122,9 @@ p{
 	/* add an indent on the first line of 2rem */
 	/* center those paragraphs (not the text) on the page */
 	padding: 0.5rem;
+	max-width: 55ch;
+	text-indent: 2rem;
+	margin: 0 auto;
 }
 
 a{
@@ -116,11 +137,13 @@ a:hover{
 
 dl, ol, main ul{
 	/* limit the width of these lists to 55 characters */
+	width: 55ch;
 	margin: 1rem auto;
 }
 
 dt{
 	/* make this font display in bold weight */
+	font-decoration: bold;
 }
 
 dt::before{
